@@ -6,7 +6,7 @@
         req.reqName=name;
         let regex = /^[a-zA-Z-]+$/g
 
-        if (regex.test(name)){
+        if (name && regex.test(name)){
             next();
         }
         else{
