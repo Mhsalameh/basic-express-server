@@ -4,7 +4,7 @@
         const query = req.query;
         const name = query.name;
         req.reqName=name;
-        let regex = /[A-z]+/
+        let regex = /^[a-zA-Z-]+$/g
 
         if (regex.test(name)){
             next();
